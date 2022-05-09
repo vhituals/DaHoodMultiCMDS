@@ -1,0 +1,142 @@
+repeat
+	wait()
+until game:IsLoaded()
+
+if game.PlaceId == 2788229376 then
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!name" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(game.Players.LocalPlayer.Name, "All")
+			setclipboard(game.Players.LocalPlayer.Name)
+		end
+	end)
+
+	
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!fact" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("your an L", "All")
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!crash" then
+			wait(0.3)
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+		end
+	end)
+	
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!tt" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("vhontop", "All")
+			setclipboard("312239016")
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!id" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Copied your ID to clipboard!", "All")
+			setclipboard(game.Players.LocalPlayer.UserId)
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!vh" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("vh 6068", "All")
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!cr" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("vhituals made this script", "All")
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!kingy" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("kingy is god", "All")
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!beg" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Imagine begging for this script🤓 ", "All")
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!z" then
+			wait(0.3)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("zedain is a skidmark", "All")
+		end
+	end)
+
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!mario" then
+			loadstring(game:HttpGet("https://pastebin.com/raw/mA6ZE4Th", true))()
+		end
+	end)
+
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!swag" then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!beta" then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/BETA_Swagmode'))()
+		end
+	end)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!god" then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/Godv3'))()
+		end
+	end)
+	
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if msg == "!binds" then
+			print("| h to enable/disable | ")
+			print("| u to play death sound |")
+			print("| k to go super skinny |")
+			print("| x to tp |")
+			print("| y to be fat |")
+			
+		end
+	end)
+
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Script made by VH.";
+		Text = "F9 for commands";
+		Duration = "3.5"
+	})
+	print("---------------Made by VH--------------------")
+	print("| Say !name to copy your username to clipboard. |")
+	print("| Say !fact to say a fact out. |")
+	print("| Say !tt to say out your TikTok username. |")
+	print("| Say !id to print your profile ID. |")
+	print("| Say !vh to say your discord user out. |")
+	print("| Say !kingy to compliment kingy. |")
+	print("| Say !mario to execute mario script. |")
+	print("| Say !swag to execute SwagMode script. |")
+	print("| Say !binds to print mario script keybinds in console. |")
+	print("| Say !beta to execute SwagMode Beta. |")
+	print("| Say !god to go godded. |")
+	print("| Say !crash to load server crasher options. |")
+	print("| Say !cr to say who created this script. |")
+	print("| Say !beg to be toxic to the kids who want this script. |")
+	print("| Say !z to say something about zedain. |")
+	print("--------------------------------------------")
+else
+	print("nil")
+end
